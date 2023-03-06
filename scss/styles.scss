@@ -139,9 +139,11 @@
    }
 
    &__tel {
+      font-size: 14px;
+      letter-spacing: 0px;
       display: block;
       opacity: 0;
-      padding: 10px;
+      padding: 6px;
       position: absolute;
       z-index: 9;
       text-align: center;
@@ -149,7 +151,7 @@
       left: 0;
       right: 0;
       top: 80%;
-      width: 200px;
+      width: max-content;
       margin: 0 auto;
    }
 
