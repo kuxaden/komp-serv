@@ -17,12 +17,6 @@
 }
 
 @media (max-width: 840px) {
-   .services-block {
-      grid-template-columns: 1fr 1fr;
-   }
-}
-
-@media (max-width: 768px) {
    .navbar {
       position: relative;
    }
@@ -87,6 +81,13 @@
       transform: rotate(-45deg);
    }
 
+   .services-block {
+      grid-template-columns: 1fr 1fr;
+   }
+}
+
+@media (max-width: 768px) {
+   
    .about-block {
       grid-template-columns: 1fr;
       font-size: 20px;
@@ -109,6 +110,10 @@
 @media (max-width: 650px) {
    .navbar {
       height: 60px;
+      &__tel {
+         font-size: 14px;
+         letter-spacing: 0px;
+      }
 
       &__logo-img {
          height: 60px;

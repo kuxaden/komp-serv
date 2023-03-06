@@ -132,34 +132,10 @@
       transform: translateY(-50%);
       transition: all 1s;
       background: rgba($color: $bcg1, $alpha: 0.7);
+      top: 50%;
+
    }
 
-   &__title {
-      top: 30%;
-   }
-
-   &__tel {
-      font-size: 14px;
-      letter-spacing: 0px;
-      display: block;
-      opacity: 0;
-      padding: 6px;
-      position: absolute;
-      z-index: 9;
-      text-align: center;
-      transform: translateY(-50%);
-      left: 0;
-      right: 0;
-      top: 80%;
-      width: max-content;
-      margin: 0 auto;
-   }
-
-   &__tel:hover {
-      transition: all 0.5s;
-      box-shadow: 0px 0px 5px 2px $bcg1;
-      background: rgba($color: $bcg1, $alpha: 0.9);
-   }
 }
 
 // ABOUT
