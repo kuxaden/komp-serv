@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Комп'ютерний сервіс</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="https://kit.fontawesome.com/38a4fe2210.css" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a class="navbar__logo-link" href="#">
+            <img class="navbar__logo-img" src="img/logos_1.3.svg" alt="">
+          </a>
+          <ul class="menu-list">
+            <li class="menu-list__item " onclick="closeMenu()">
+              <a class="menu-list__item-link border-button" href="#services">Послуги</a>
+            </li>
+            <li class="menu-list__item" onclick="closeMenu()">
+              <a class="menu-list__item-link border-button" href="#about">Про мене</a>
+            </li>
+            <li class="menu-list__item" onclick="closeMenu()">
+              <a class="menu-list__item-link border-button" href="#contacts">Контакти</a>
+            </li>
+          </ul>
+          <button class="navbar-btn border-button" onclick="openMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="services" id="services">
+        <div class="container">
+          <h1 class="services__title">
+            ПОСЛУГИ
+          </h1>
+          <div class="services-block">
+            <div class="services-block__item">
+              <h3 class="services-block__title">Встановлення або переустановка Windows</h3>
+              <img class="services-block__image" src="img/windows.jpg" alt="">
+              <a class="services-block__tel border-button" href="tel:+380937093029">Зателефонувати</a>
+            </div>
+            <div class="services-block__item">
+              <h3 class="services-block__title">Встановлення MS Office 2007-2019</h3>
+              <img class="services-block__image" src="img/office.jpg" alt="">
+              <a class="services-block__tel border-button" href="tel:+380937093029">Зателефонувати</a>
+            </div>
+            <div class="services-block__item">
+              <h3 class="services-block__title">Підбір та встановлення драйверів</h3>
+              <img class="services-block__image" src="img/drivers.jpg" alt="">
+              <a class="services-block__tel border-button" href="tel:+380937093029">Зателефонувати</a>
+            </div>
+            <div class="services-block__item">
+              <h3 class="services-block__title">Апгрейд ноутбука чи ПК</h3>
+              <img class="services-block__image" src="img/upgrade.jpg" alt="">
+              <a class="services-block__tel border-button" href="tel:+380937093029">Зателефонувати</a>
+            </div>
+            <div class="services-block__item">
+              <h3 class="services-block__title">Чистка від пилу та заміна термопасти</h3>
+              <img class="services-block__image" src="img/cleaning.jpg" alt="">
+              <a class="services-block__tel border-button" href="tel:+380937093029">Зателефонувати</a>
+            </div>
+            <div class="services-block__item">
+              <h3 class="services-block__title">Встановлення та налаштування ПЗ</h3>
+              <img class="services-block__image" src="img/software.jpg" alt="">
+              <a class="services-block__tel border-button" href="tel:+380937093029">Зателефонувати</a>
+            </div>
+            <div class="services-block__item">
+              <h3 class="services-block__title">Налаштування роутера та мережі</h3>
+              <img class="services-block__image" src="img/internet.jpg" alt="">
+              <a class="services-block__tel border-button" href="tel:+380937093029">Зателефонувати</a>
+            </div>
+            <div class="services-block__item">
+              <h3 class="services-block__title">Відновлення втрачених даних на різних носіях</h3>
+              <img class="services-block__image" src="img/recovery.jpg" alt="">
+              <a class="services-block__tel border-button" href="tel:+380937093029">Зателефонувати</a>
+            </div>
+            <div class="services-block__item">
+              <h3 class="services-block__title">Чистка від вірусів, встановлення антивіруса</h3>
+              <img class="services-block__image" src="img/antivirus.jpg" alt="">
+              <a class="services-block__tel border-button" href="tel:+380937093029">Зателефонувати</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about" onmousemove="startAnimate()">
+        <div class="container">
+          <div class="about__title">
+            <h2>Про мене</h2>
+          </div>
+          <div class="about-block">
+            <div class="about-block__text">
+              <div class="about-block__text-item">Працюю на дому та дистанційно</div>
+              <div class="about-block__text-item">Виконаю замовлення якісно, так як ця робота мені в задоволення</div>
+              <div class="about-block__text-item">Мінімальний ризик втрати даних</div>
+              <div class="about-block__text-item">Безкоштовна діагностика</div>
+              <div class="about-block__text-item">Приємна ціна</div>
+            </div>
+            <div class="about-block__diplom">
+              <img src="img/diplom.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <h2 class="contacts-block__title">
+            Контакти
+          </h2>
+          <div class="contacts-block">
+            <div class="contacts-block__address">
+              вул. Миру, 2 <br>
+              м. Городок<br>
+              Хмельницька обл.<br>
+            </div>
+            <div class="contacts-block__onmap">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6311.317480861746!2d26.570247869311522!3d49.16700269651387!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47322105d261d705%3A0x912eb1c3a939f316!2z0JPQvtGA0L7QtNC-0LosINCl0LzQtdC70YzQvdC40YbRjNC60LAg0L7QsdC70LDRgdGC0YwsIDMyMDAw!5e1!3m2!1suk!2sua!4v1677859121082!5m2!1suk!2sua"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <a class="navbar__logo-link" href="#">
+          <img class="navbar__logo-img" src="img/logos_1.3.svg" alt="">
+        </a>
+        <div class="footer-contacts">
+          <ul class="footer-contacts__list">
+            <li class="footer-contacts__list-item">
+              <a class="border-button" href="mailto:kuxa.cominer@gmail.com"><i
+                  class="icon-gmail"></i>kuxa.cominer@gmail.com</a>
+            </li>
+            <li class="footer-contacts__list-item">
+              <a class="border-button" href="tel:+380937093029">Life +380937093029</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <ul class="footer-social__list">
+            <li class="footer-social__list-item">
+              <a class="border-button" href="viber://pa?chatURI=<+380937093029>"><i class="fa-brands fa-viber"></i></a>
+            </li>
+            <li class="footer-social__list-item"><a class="border-button" href="https://telegram.me/+380937093029"><i class="fa-brands fa-telegram"></i></a>
+            </li>
+            <li class="footer-social__list-item">
+              <a class="border-button" href="https://www.instagram.com/kuxaden/"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li class="footer-social__list-item">
+              <a class="border-button" href="https://www.facebook.com/profile.php?id=100022210161788"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://kit.fontawesome.com/38a4fe2210.js" crossorigin="anonymous"></script>
+  <script> 
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.querySelector(".header").style.top = "0";
+      } else {
+        document.querySelector(".header").style.top = "-80px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
+  <script>
+    const carusel = document.querySelector('.services-block');
+    carusel.innerHTMl = '';
+    [...carusel.children]
+      .sort(() => Math.random() - 0.5)
+      .forEach(v => carusel.append(v));
+  </script>
+  <script>
+    if ('ontouchstart' in window) {
+      console.log("/* browser with Touch Events support */");
+    } else {
+      console.log("/* browser with Touch Events NO support */");
+    };
+
+    document.addEventListener("DOMContentLoaded", startup);
+    function startup() {
+      var el = document.querySelector(".about");
+      el.addEventListener("touchstart", handleStart, false); 
+    }
+
+    function handleStart(evt) {
+      console.log("startAnimate");
+      startAnimate();
+    }
+
+  </script>
+  <script>
+    window.onload = function () {
+      var body = document.querySelector('body');
+      var links = document.querySelectorAll('a');
+
+      links.forEach(function (link) {
+        link.addEventListener('click', onLinkClicked);
+
+        function onLinkClicked(event) {
+          event.preventDefault();
+          // body.classList.remove('animated-show-active')
+          setTimeout(onAnimationComplete, 1000);
+        }
+
+        function onAnimationComplete() {
+          window.location = link.href;
+        }
+      });
+    }
+  </script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

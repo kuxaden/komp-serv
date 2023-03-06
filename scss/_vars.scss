@@ -1,0 +1,83 @@
+$fonts:#c4f5cc; ;
+$fonts2: #FFDEAD;
+$bcg1: #222d2c; // цвет фона логотипа
+$bcg2: #2F4F4F; //
+$bcg3: #FFFFF0; //ivory
+$bcg4: #0b0b0b;//#343a40;
+$grad1: #343B29; //Бутылочно-зеленый
+$grad2: #2E8B57; //Зеленое море
+
+$shadow1: rgb(177, 126, 177);
+$color1: #fff;
+
+%section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+  height: 40px;
+  box-shadow: 0px 0px 5px 2px $grad2;
+  text-transform: uppercase;
+  transition: all 0.5s;
+
+}
+%section-title-hover {
+  background-color: $fonts;
+  // color: $fonts2;
+}
+
+// MENU BUTTON
+.border-button {
+   text-decoration: none;
+   display: inline-block;
+   padding: 8px;
+   margin: auto 10px;
+   position: relative;
+   color: $fonts;
+   border: 1px hidden;
+   background: none;
+   font-weight: 700;
+   font-family: 'Jura', sans-serif;
+   line-height: 22px;
+   letter-spacing: 2px;
+ }
+ .border-button:before, .border-button:after {
+   content: "";
+   position: absolute;
+   width: 0;
+   height: 0;
+   opacity: 0;
+   box-sizing: border-box;
+ }
+ .border-button:before {
+   bottom: 0;
+   left: 0;
+   border-left: 1px solid $fonts;
+   border-top: 1px solid $fonts ;
+   transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+ }
+ .border-button:after {
+   top: 0;
+   right: 0;
+   border-right: 1px solid $fonts;
+   border-bottom: 1px solid $fonts;
+   transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+ }
+ .border-button:hover:before, 
+ .border-button:hover:after {
+   height: 100%;
+   width: 100%;
+   opacity: 1;
+ }
+ .border-button:hover:before {
+   transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+ }
+ .border-button:hover:after {
+   transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+ }
+ .border-button:hover {
+   background: rgba(255, 255, 255, .2);
+ }
+
+   
