@@ -55,13 +55,13 @@
    display: none;
    margin: auto 0;
    height: 50px;
-   padding: 10px;
+   padding: 5px;
    cursor: pointer;
    background-color: transparent;
 }
 
 .navbar-btn:hover {
-   background-color: rgba($bcg1, 1s);
+   background-color: rgba($bcg1, 1);
 }
 
 .navbar-btn span {
@@ -106,18 +106,18 @@
    &__title {
 
       display: block;
-      padding: 10px;
+      padding: 6px;
       position: absolute;
       right: 0;
       left: 0;
       z-index: 9;
       text-align: center;
       opacity: 1;
-      color: $fonts2;
+      color: $fonts;
       align-items: center;
       transform: translateY(-50%);
       transition: all 1s;
-      background: rgba($color: $bcg4, $alpha: 0.7);
+      background: rgba($bcg4, 0.7);
       top: 50%;
    }
 
@@ -149,7 +149,7 @@
    margin: 10px auto;
 
    @extend %section-title;
-   background: #fff;
+   // background: #fff;
 
 }
 
@@ -286,7 +286,7 @@
       font-family: 'Caveat';
       font-size: 22px;
       cursor: pointer;
-      margin-top: 10px;
+      // margin-top: 10px;
 
    }
 
