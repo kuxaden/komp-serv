@@ -1,24 +1,20 @@
 $fonts:#c4f5cc; ;
-$fonts2: #FFDEAD;
-$bcg1: #222d2c; // цвет фона логотипа
-$bcg2: #2F4F4F; //
-$bcg3: #FFFFF0; //ivory
-$bcg4: #0b0b0b;//#343a40;
-$grad1: #343B29; //Бутылочно-зеленый
-$grad2: #2E8B57; //Зеленое море
+$bcg: #0b0b0b;//
+$shadow: #2E8B57; //Зеленое море
 
 $shadow1: rgb(177, 126, 177);
 $color1: #fff;
 
 %section-title {
-  background: $fonts;
+  color: $fonts;
+  background: radial-gradient(circle,rgba(11, 11, 11, 1) 0%, rgba(196, 245, 204, 1) 100%) ;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   border-radius: 10px;
   height: 40px;
-  box-shadow: 0px 0px 5px 2px $grad2;
+  box-shadow: 0px 0px 5px 2px $shadow;
   text-transform: uppercase;
   transition: all 0.5s;
 

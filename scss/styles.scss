@@ -10,7 +10,7 @@
    top: 0;
    width: 100%;
    transition: top 0.5s;
-   background-color: $bcg4;
+   background-color: $bcg;
 }
 
 .navbar {
@@ -61,7 +61,7 @@
 }
 
 .navbar-btn:hover {
-   background-color: rgba($bcg1, 1);
+   background-color: rgba($bcg, 0.8);
 }
 
 .navbar-btn span {
@@ -88,10 +88,9 @@
    gap: 10px;
 
    &__item {
-      box-shadow: 0px 0px 5px 2px $grad2;
-      border: 1px cadetblue solid;
+      box-shadow: 0px 0px 5px 2px $shadow;
       border-radius: 10px;
-      background-color: rgba($color: $bcg4, $alpha: 0.5);
+      background: radial-gradient(circle, rgba($fonts, 1) 0%, rgba($bcg, 1) 100%);
       position: relative;
       cursor: pointer;
    }
@@ -117,7 +116,7 @@
       align-items: center;
       transform: translateY(-50%);
       transition: all 1s;
-      background: rgba($bcg4, 0.7);
+      background: rgba($bcg, 0.7);
       top: 50%;
    }
 
@@ -135,8 +134,7 @@
 
 // ABOUT
 .about {
-   background: rgb(196,245,204);
-   background: radial-gradient(circle, rgba(196,245,204,1) 0%, rgba(11,11,11,1) 100%);
+   background: radial-gradient(circle, rgba($fonts, 1) 0%, rgba($bcg, 1) 100%);
 }
 
 .about__title {
@@ -174,7 +172,7 @@
    &__text-item {
       position: relative;
       z-index: 12;
-      box-shadow: 0px 0px 5px 2px $grad2;
+      box-shadow: 0px 0px 5px 2px $shadow;
       border-radius: 10px;
       opacity: 0;
       padding: 13px;
@@ -198,7 +196,7 @@
    &__diplom img {
       object-fit: cover;
       object-position: left 50%;
-      box-shadow: 0px 0px 5px 2px $grad2;
+      box-shadow: 0px 0px 5px 2px $shadow;
       border-radius: 10px;
       height: 320px;
       width: 460px;
@@ -259,6 +257,7 @@
       }
    }
 }
+
 // .contacts {
 //    padding-top: 5px;
 //    background-color: $fonts;
@@ -280,12 +279,14 @@
       align-items: center;
       border-radius: 10px;
       text-align: center;
-      box-shadow: 0px 0px 5px 2px $grad2;
+      box-shadow: 0px 0px 5px 2px $shadow;
       margin-bottom: 10px;
       background-color: $fonts;
       font-family: 'Caveat';
       font-size: 22px;
       cursor: pointer;
+      background: radial-gradient(circle, rgba($fonts, 1) 0%, rgba($bcg, 1) 100%);
+
       // margin-top: 10px;
 
    }
@@ -293,7 +294,7 @@
    &__onmap iframe {
       width: 100%;
       height: 300px;
-      box-shadow: 0px 0px 5px 2px $grad2;
+      box-shadow: 0px 0px 5px 2px $shadow;
       border-radius: 10px;
 
    }
@@ -301,7 +302,7 @@
 
 // FOOTER
 .footer {
-   background-color: $bcg4;
+   background-color: $bcg;
 
    .container {
       display: flex;
