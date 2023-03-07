@@ -23,11 +23,13 @@
 
    &__logo-img {
       height: 80px;
+      width: 192px;
    }
 
    &__button {
       display: none;
    }
+
 }
 
 .menu-list {
@@ -35,7 +37,6 @@
    justify-content: end;
    align-items: center;
    transition: all 0.5s;
-
 
    &__item {
       text-transform: uppercase;
@@ -60,7 +61,7 @@
 }
 
 .navbar-btn:hover {
-   background-color: rgba($bcg1, 0.5);
+   background-color: rgba($bcg1, 1s);
 }
 
 .navbar-btn span {
@@ -73,19 +74,15 @@
 // HEADER_END
 
 // SECTION 
-
 .services__title {
    margin-top: 100px;
    margin-bottom: 0px;
    @extend %section-title;
-}
-
-.services__title:hover {
-   @extend %section-title-hover;
+   margin-bottom: 10px;
 }
 
 .services-block {
-   padding: 10px 0px;
+   // padding: 10px 0px;
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    gap: 10px;
@@ -94,31 +91,20 @@
       box-shadow: 0px 0px 5px 2px $grad2;
       border: 1px cadetblue solid;
       border-radius: 10px;
-      background-color: cadetblue;
+      background-color: rgba($color: $bcg4, $alpha: 0.5);
       position: relative;
       cursor: pointer;
    }
 
-   &__item:hover {
-      .services-block__title {
-         opacity: 1;
-      }
-
-      .services-block__tel {
-         opacity: 1;
-      }
-
-      .services-block__image {
-         opacity: 0.3;
-      }
-   }
 
    &__image {
       transition: all 1s;
       border-radius: 10px;
+      opacity: 0.3;
    }
 
    &__title {
+
       display: block;
       padding: 10px;
       position: absolute;
@@ -126,39 +112,44 @@
       left: 0;
       z-index: 9;
       text-align: center;
-      opacity: 0;
+      opacity: 1;
       color: $fonts2;
       align-items: center;
       transform: translateY(-50%);
       transition: all 1s;
-      background: rgba($color: $bcg1, $alpha: 0.7);
+      background: rgba($color: $bcg4, $alpha: 0.7);
       top: 50%;
+   }
 
+   &__item:hover {
+      .services-block__title {
+         opacity: 0;
+      }
+
+      .services-block__image {
+         opacity: 1;
+      }
    }
 
 }
 
 // ABOUT
 .about {
-   background-color: #D3D3D3;
-   // margin: 10px auto;
+   background: rgb(196,245,204);
+   background: radial-gradient(circle, rgba(196,245,204,1) 0%, rgba(11,11,11,1) 100%);
 }
 
 .about__title {
-   padding-top: 15px;
-   margin: 25px auto 10px;
+   padding-top: 10px;
+   margin-top: 10px;
 
 }
 
 .about__title h2 {
+   margin: 10px auto;
 
    @extend %section-title;
    background: #fff;
-
-}
-
-.about__title h2:hover {
-   @extend %section-title-hover;
 
 }
 
@@ -190,6 +181,7 @@
       cursor: pointer;
       height: 56px;
       transition: all 0.5s;
+      background-color: #fff;
    }
 
    &__diplom {
@@ -264,11 +256,13 @@
       to {
          transform: translateX(0px);
          opacity: 1;
-         background: $fonts;
       }
    }
 }
-
+// .contacts {
+//    padding-top: 5px;
+//    background-color: $fonts;
+// }
 .contacts-block {
    display: grid;
    grid-template-columns: 1fr 2fr;
@@ -278,10 +272,6 @@
       @extend %section-title;
       margin: 25px auto 10px;
 
-   }
-
-   &__title:hover {
-      @extend %section-title-hover;
    }
 
    &__address {
@@ -296,6 +286,7 @@
       font-family: 'Caveat';
       font-size: 22px;
       cursor: pointer;
+      margin-top: 10px;
 
    }
 

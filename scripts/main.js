@@ -3,12 +3,12 @@ const { byteLength } = require("engine.io-client/build/esm/util");
 
 
 function openMenu() {
-   document.querySelector(".menu-list").classList.toggle('active');
-   document.querySelector(".navbar-btn").classList.toggle('active');
+   document.querySelector(".menu-list").classList.toggle('menu-list--active');
+   document.querySelector(".navbar-btn").classList.toggle('navbar-btn--active');
 };
 function closeMenu() {
-   document.querySelector(".menu-list").classList.toggle('active');
-   document.querySelector(".navbar-btn").classList.toggle('active');
+   document.querySelector(".menu-list").classList.toggle('menu-list--active');
+   document.querySelector(".navbar-btn").classList.toggle('navbar-btn--active ');
 };
 
 function startAnimate() {

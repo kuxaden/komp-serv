@@ -11,6 +11,7 @@ $shadow1: rgb(177, 126, 177);
 $color1: #fff;
 
 %section-title {
+  background: $fonts;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,10 +22,6 @@ $color1: #fff;
   text-transform: uppercase;
   transition: all 0.5s;
 
-}
-%section-title-hover {
-  background-color: $fonts;
-  // color: $fonts2;
 }
 
 // MENU BUTTON
