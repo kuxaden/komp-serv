@@ -102,22 +102,34 @@
       opacity: 0.3;
    }
 
-   &__title {
+   &__title,
+   &__price {
 
       display: block;
-      padding: 6px;
+      padding: 6px 10px;
       position: absolute;
       right: 0;
       left: 0;
+      top: 50%;
+      transform: translateY(-50%);
       z-index: 9;
       text-align: center;
-      opacity: 1;
       color: $fonts;
-      align-items: center;
-      transform: translateY(-50%);
       transition: all 1s;
-      background: rgba($bcg, 0.7);
-      top: 50%;
+      background: rgba($bcg, 0.8);
+   }
+
+   &__title {
+      opacity: 1;
+   }
+
+   &__price {
+      border-radius: 10px;
+      width: max-content;
+      margin: 0 auto;
+      opacity: 0;
+      box-shadow: 0px 0px 5px 2px $shadow;
+
    }
 
    &__item:hover {
@@ -126,6 +138,10 @@
       }
 
       .services-block__image {
+         opacity: 1;
+      }
+
+      .services-block__price {
          opacity: 1;
       }
    }
