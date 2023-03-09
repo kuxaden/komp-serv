@@ -23,7 +23,7 @@
           </a>
           <a class="navbar__tel border-button" href="tel:+380937093029">Life +380937093029</a>
           <ul class="menu-list">
-            <li class="menu-list__item " onclick="closeMenu()">
+            <li class="menu-list__item" onclick="closeMenu()">
               <a class="menu-list__item-link border-button" href="#services">Послуги</a>
             </li>
             <li class="menu-list__item" onclick="closeMenu()">
@@ -207,26 +207,6 @@
       startAnimate();
     }
 
-  </script>
-  <script>
-    window.onload = function () {
-      var body = document.querySelector('body');
-      var links = document.querySelectorAll('a');
-
-      links.forEach(function (link) {
-        link.addEventListener('click', onLinkClicked);
-
-        function onLinkClicked(event) {
-          event.preventDefault();
-          // body.classList.remove('animated-show-active')
-          setTimeout(onAnimationComplete, 1000);
-        }
-
-        function onAnimationComplete() {
-          window.location = link.href;
-        }
-      });
-    }
   </script>
   <script src="js/main.min.js"></script>
 </body>

@@ -1,5 +1,5 @@
-const { active } = require("browser-sync");
-const { byteLength } = require("engine.io-client/build/esm/util");
+// const { active } = require("browser-sync");
+// const { byteLength } = require("engine.io-client/build/esm/util");
 
 
 function openMenu() {
@@ -7,8 +7,9 @@ function openMenu() {
    document.querySelector(".navbar-btn").classList.toggle('navbar-btn--active');
 };
 function closeMenu() {
-   document.querySelector(".menu-list").classList.toggle('menu-list--active');
-   document.querySelector(".navbar-btn").classList.toggle('navbar-btn--active');
+   document.querySelector(".menu-list").classList.remove('menu-list--active');
+   document.querySelector(".navbar-btn").classList.remove('navbar-btn--active');
+
 };
 
 function startAnimate() {
@@ -18,4 +19,23 @@ function startAnimate() {
       items[i].classList.add('animated');
    }
 };
+
+window.onload = function () {
+   var body = document.querySelector('body');
+   var links = document.querySelectorAll('a');
+
+   links.forEach(function (link) {
+     link.addEventListener('click', onLinkClicked);
+
+     function onLinkClicked(event) {
+       event.preventDefault();
+       setTimeout(onAnimationComplete, 1000);
+     }
+
+     function onAnimationComplete() {
+       window.location = link.href;
+     }
+   });
+   
+ }
 
