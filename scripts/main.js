@@ -8,7 +8,7 @@ function openMenu() {
 };
 function closeMenu() {
    document.querySelector(".menu-list").classList.toggle('menu-list--active');
-   document.querySelector(".navbar-btn").classList.toggle('navbar-btn--active ');
+   document.querySelector(".navbar-btn").classList.toggle('navbar-btn--active');
 };
 
 function startAnimate() {

@@ -114,14 +114,14 @@
       &__tel {
          font-size: 14px;
          letter-spacing: 0px;
-         height: 50px;
+         height: min-content;
          line-height: 18px;
          text-align: center;
-         padding: auto;
+         margin: auto 0;
+         padding: 5px 10px;
       }
 
       &__logo-img {
-         object-fit: scale-down;
          height: 60px;
          width: 144px;
       }
