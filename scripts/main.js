@@ -1,7 +1,3 @@
-// const { active } = require("browser-sync");
-// const { byteLength } = require("engine.io-client/build/esm/util");
-
-
 function openMenu() {
    document.querySelector(".menu-list").classList.toggle('menu-list--active');
    document.querySelector(".navbar-btn").classList.toggle('navbar-btn--active');
@@ -20,6 +16,7 @@ function startAnimate() {
    }
 };
 
+// Задержка  перед выполнением ссылки в одну секунду.
 window.onload = function () {
    var body = document.querySelector('body');
    var links = document.querySelectorAll('a');

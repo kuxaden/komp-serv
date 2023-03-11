@@ -170,7 +170,9 @@
     </footer>
   </div>
   <script src="https://kit.fontawesome.com/38a4fe2210.js" crossorigin="anonymous"></script>
+
   <script> 
+    // скрыть - меню навигации при прокрутке вниз
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function () {
       var currentScrollPos = window.pageYOffset;
@@ -182,26 +184,31 @@
       prevScrollpos = currentScrollPos;
     }
   </script>
+
   <script>
+    // Рандомно перемешивает элементы блока
     const carusel = document.querySelector('.services-block');
     carusel.innerHTMl = '';
     [...carusel.children]
       .sort(() => Math.random() - 0.5)
       .forEach(v => carusel.append(v));
   </script>
+
   <script>
+
+    // Проверяет поддерживает ли браузер касание
     if ('ontouchstart' in window) {
       console.log("/* browser with Touch Events support */");
     } else {
       console.log("/* browser with Touch Events NO support */");
     };
-
+    // Создаёт событие которое отслеживает касание на объекте about
     document.addEventListener("DOMContentLoaded", startup);
     function startup() {
       var el = document.querySelector(".about");
       el.addEventListener("touchstart", handleStart, false); 
     }
-
+    // в случае срабатывания запускает функцию StartAnimate()
     function handleStart(evt) {
       console.log("startAnimate");
       startAnimate();
