@@ -10,7 +10,7 @@
    top: 0;
    width: 100%;
    transition: top 0.5s;
-   background-color: $bcg;
+   background-color: $color2;
 }
 
 .navbar {
@@ -29,6 +29,7 @@
    &__button {
       display: none;
    }
+
    &__tel {
       display: block;
       letter-spacing: 0px;
@@ -53,7 +54,7 @@
    }
 
    &__item-link {
-      color: $fonts;
+      color: $color1;
    }
 }
 
@@ -96,7 +97,7 @@
    &__item {
       box-shadow: 0px 0px 5px 2px $shadow;
       border-radius: 10px;
-      background: radial-gradient(circle, rgba($fonts, 1) 0%, rgba($bcg, 1) 100%);
+      background: radial-gradient(circle, $color1 0%, $color2 100%);
       position: relative;
       cursor: pointer;
    }
@@ -120,9 +121,9 @@
       transform: translateY(-50%);
       z-index: 9;
       text-align: center;
-      color: $fonts;
+      color: $color1;
       transition: all 1s;
-      background: rgba($bcg, 0.8);
+      background: rgba($color2, 0.8);
    }
 
    &__title {
@@ -156,21 +157,17 @@
 
 // ABOUT
 .about {
-   background: radial-gradient(circle, rgba($fonts, 1) 0%, rgba($bcg, 1) 100%);
+   background: radial-gradient(circle, $color1 0%, $color2 100%);
 }
 
 .about__title {
    padding-top: 10px;
    margin-top: 10px;
-
 }
 
 .about__title h2 {
    margin: 10px auto;
-
    @extend %section-title;
-   // background: #fff;
-
 }
 
 .about-block {
@@ -212,7 +209,6 @@
       opacity: 0;
       height: 320px;
       width: 460px;
-
    }
 
    &__diplom img {
@@ -222,7 +218,6 @@
       border-radius: 10px;
       height: 320px;
       width: 460px;
-
    }
 }
 
@@ -280,10 +275,7 @@
    }
 }
 
-// .contacts {
-//    padding-top: 5px;
-//    background-color: $fonts;
-// }
+// CONTACTS
 .contacts-block {
    display: grid;
    grid-template-columns: 1fr 2fr;
@@ -292,7 +284,6 @@
    &__title {
       @extend %section-title;
       margin: 25px auto 10px;
-
    }
 
    &__address {
@@ -303,14 +294,11 @@
       text-align: center;
       box-shadow: 0px 0px 5px 2px $shadow;
       margin-bottom: 10px;
-      background-color: $fonts;
+      background-color: $color1;
       font-family: 'Caveat';
       font-size: 22px;
       cursor: pointer;
-      background: radial-gradient(circle, rgba($fonts, 1) 0%, rgba($bcg, 1) 100%);
-
-      // margin-top: 10px;
-
+      background: radial-gradient(circle, rgba($color1, 1) 0%, rgba($color2, 1) 100%);
    }
 
    &__onmap iframe {
@@ -318,13 +306,12 @@
       height: 300px;
       box-shadow: 0px 0px 5px 2px $shadow;
       border-radius: 10px;
-
    }
 }
 
 // FOOTER
 .footer {
-   background-color: $bcg;
+   background-color: $color2;
 
    .container {
       display: flex;
@@ -345,7 +332,7 @@
    }
 
    &__list-item a {
-      color: $fonts;
+      color: $color1;
    }
 }
 
@@ -363,7 +350,7 @@
    }
 
    &__list-item a {
-      color: $fonts;
+      color: $color1;
    }
 }
 

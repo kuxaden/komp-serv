@@ -1,12 +1,10 @@
-$fonts:#c4f5cc; ;
-$bcg: #0b0b0b;//
+$color1:#c4f5cc; ;
+$color2: #0b0b0b;//
 $shadow: #2E8B57; //Зеленое море
 
-$shadow1: rgb(177, 126, 177);
-$color1: #fff;
 
 %section-title {
-  color: $fonts;
+  color: $color1;
   background: radial-gradient(circle,rgba(11, 11, 11, 1) 0%, rgba(196, 245, 204, 1) 100%) ;
   display: flex;
   justify-content: center;
@@ -28,7 +26,7 @@ $color1: #fff;
    padding: 8px;
    margin: auto 10px;
    position: relative;
-   color: $fonts;
+   color: $color1;
    border: 1px hidden;
    background: none;
    font-weight: 700;
@@ -47,15 +45,15 @@ $color1: #fff;
  .border-button:before {
    bottom: 0;
    left: 0;
-   border-left: 1px solid $fonts;
-   border-top: 1px solid $fonts ;
+   border-left: 1px solid $color1;
+   border-top: 1px solid $color1 ;
    transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
  }
  .border-button:after {
    top: 0;
    right: 0;
-   border-right: 1px solid $fonts;
-   border-bottom: 1px solid $fonts;
+   border-right: 1px solid $color1;
+   border-bottom: 1px solid $color1;
    transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
  }
  .border-button:hover:before, 
