@@ -21,16 +21,19 @@
    }
 
    .menu-list {
+      margin-right: 0;
+      border: 1px solid $color2;
       border-radius: 0 0 10px 10px;
       display: table-column;
       background: $color2;
       position: absolute;
       z-index: 20;
       right: 0;
+      left: 0;
       top: -160px;
-
       &__item {
-         margin: 10px 55px 10px 20px;
+         text-align: center;
+         margin: 10px 20px;
       }
 
       &__item-link {
@@ -39,13 +42,16 @@
    }
 
    .menu-list.menu-list--active {
-      top: 80px;
+      top:80px;
    }
 
    .navbar-btn {
       position: relative;
       display: block;
       margin: auto 0;
+      margin-right: 15px;
+      
+
       height: 47px;
       padding: 5px;
       cursor: pointer;
@@ -127,7 +133,7 @@
    }
 
    .menu-list.menu-list--active {
-      top: 60px;
+      top: 58px;
    }
 
    .contacts-block {

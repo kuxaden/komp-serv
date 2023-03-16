@@ -14,14 +14,19 @@
 }
 
 .navbar {
+
    display: flex;
    justify-content: space-between;
    height: 80px;
-   max-width: 95vw;
+   max-width: 1200px;
+   width: 100%;
+   margin: 0 auto;
    position: relative;
    z-index: 12;
+   border: 1px $color2 solid;
 
    &__logo-img {
+      margin-left: 15px;
       height: 80px;
       width: 192px;
    }
@@ -40,6 +45,7 @@
 }
 
 .menu-list {
+   margin-right: 15px;
    display: flex;
    justify-content: end;
    align-items: center;
