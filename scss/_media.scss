@@ -1,9 +1,3 @@
-@media (max-width: 1366px) {}
-
-@media (max-width: 1200px) {}
-
-@media (max-width: 1040px) {}
-
 @media (max-width: 992px) {
    .about-block {
       font-size: 17px;
@@ -168,6 +162,9 @@
 }
 
 @media (max-width: 540px) {
+   .container{
+      overflow: hidden;
+    }
    .about-block {
       &__diplom {
          width: 100%;
@@ -188,5 +185,3 @@
       }
    }
 }
-
-@media (max-width: 390px) {}

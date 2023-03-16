@@ -89,7 +89,6 @@
 }
 
 .services-block {
-   // padding: 10px 0px;
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    gap: 10px;
@@ -111,7 +110,6 @@
 
    &__title,
    &__price {
-
       display: block;
       padding: 6px 10px;
       position: absolute;
@@ -136,7 +134,6 @@
       margin: 0 auto;
       opacity: 0;
       box-shadow: 0px 0px 5px 2px $shadow;
-
    }
 
    &__item:hover {
