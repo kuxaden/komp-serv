@@ -11,6 +11,11 @@
 }
 
 @media (max-width: 840px) {
+   .header {
+      .container {
+         overflow: visible;
+      }
+   }
    .navbar {
       position: relative;
    }
@@ -163,7 +168,7 @@
 
 @media (max-width: 540px) {
    .container{
-      overflow: hidden;
+      overflow-y: hidden;
     }
    .about-block {
       &__diplom {
