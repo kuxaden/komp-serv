@@ -16,32 +16,46 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <!-- <div class="container"> -->
-        <nav class="navbar">
-          <a class="navbar__logo-link" href="#">
-            <img class="navbar__logo-img" src="img/logos_1.3.svg" alt="">
-          </a>
-          <a class="navbar__tel border-button" href="tel:+380937093029">Life +380937093029</a>
-          <ul class="menu-list">
-            <li class="menu-list__item" onclick="closeMenu()">
-              <a class="menu-list__item-link border-button" href="#services">Послуги</a>
-            </li>
-            <li class="menu-list__item" onclick="closeMenu()">
-              <a class="menu-list__item-link border-button" href="#about">Про мене</a>
-            </li>
-            <li class="menu-list__item" onclick="closeMenu()">
-              <a class="menu-list__item-link border-button" href="#contacts">Контакти</a>
-            </li>
-          </ul>
-          <button class="navbar-btn border-button" onclick="openMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </nav>
-      <!-- </div> -->
+      <nav class="navbar">
+        <a class="navbar__logo-link" href="#">
+          <img class="navbar__logo-img" src="img/logos_1.3.svg" alt="">
+        </a>
+        <a class="navbar__tel border-button" href="tel:+380937093029">Life +380937093029</a>
+        <ul class="menu-list">
+          <li class="menu-list__item" onclick="closeMenu()">
+            <a class="menu-list__item-link border-button" href="#services">Послуги</a>
+          </li>
+          <li class="menu-list__item" onclick="closeMenu()">
+            <a class="menu-list__item-link border-button" href="#about">Про мене</a>
+          </li>
+          <li class="menu-list__item" onclick="closeMenu()">
+            <a class="menu-list__item-link border-button" href="#contacts">Контакти</a>
+          </li>
+        </ul>
+        <button class="navbar-btn border-button" onclick="openMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
     </header>
     <main class="main">
+      <section class="main-slide">
+        <div class="container">
+          <div class="main-slide__inner">
+            <img src="img/nout.png" alt="">
+          </div>
+          <ul class="main-slide__problems">
+            <li class="main-slide__items"><i class="fa-solid fa-desktop"></i>синій екран</li>
+            <li class="main-slide__items"><i class="fa-solid fa-bug"></i>помилки в роботі</li>
+            <li class="main-slide__items"><i class="fa-solid fa-temperature-high"></i></i>перегрів</li>
+            <li class="main-slide__items"><i class="fa-sharp fa-solid fa-spinner"></i>зависання</li>
+          </ul>
+          <div class="main-slide__inner">
+            <img src="img/comp.png" alt="">
+          </div>
+        </div>
+      </section>
       <section class="services" id="services">
         <div class="container">
           <h1 class="services__title">
@@ -127,8 +141,8 @@
             </div>
             <div class="contacts-block__onmap">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20870.31659092366!2d26.562471009217678!3d49.16660222951714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47322105d261d705%3A0x912eb1c3a939f316!2z0JPQvtGA0L7QtNC-0LosINCl0LzQtdC70YzQvdC40YbRjNC60LAg0L7QsdC70LDRgdGC0YwsIDMyMDAw!5e0!3m2!1suk!2sua!4v1678185793063!5m2!1suk!2sua" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20870.31659092366!2d26.562471009217678!3d49.16660222951714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47322105d261d705%3A0x912eb1c3a939f316!2z0JPQvtGA0L7QtNC-0LosINCl0LzQtdC70YzQvdC40YbRjNC60LAg0L7QsdC70LDRgdGC0YwsIDMyMDAw!5e0!3m2!1suk!2sua!4v1678185793063!5m2!1suk!2sua"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
               </iframe>
             </div>
           </div>
@@ -156,13 +170,16 @@
             <li class="footer-social__list-item">
               <a class="border-button" href="viber://pa?chatURI=<+380937093029>"><i class="fa-brands fa-viber"></i></a>
             </li>
-            <li class="footer-social__list-item"><a class="border-button" href="https://telegram.me/+380937093029"><i class="fa-brands fa-telegram"></i></a>
+            <li class="footer-social__list-item"><a class="border-button" href="https://telegram.me/+380937093029"><i
+                  class="fa-brands fa-telegram"></i></a>
             </li>
             <li class="footer-social__list-item">
-              <a class="border-button" href="https://www.instagram.com/kuxaden/"><i class="fa-brands fa-instagram"></i></a>
+              <a class="border-button" href="https://www.instagram.com/kuxaden/"><i
+                  class="fa-brands fa-instagram"></i></a>
             </li>
             <li class="footer-social__list-item">
-              <a class="border-button" href="https://www.facebook.com/profile.php?id=100022210161788"><i class="fa-brands fa-facebook"></i></a>
+              <a class="border-button" href="https://www.facebook.com/profile.php?id=100022210161788"><i
+                  class="fa-brands fa-facebook"></i></a>
             </li>
           </ul>
         </div>
