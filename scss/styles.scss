@@ -132,6 +132,17 @@
       margin: 10px auto;
       max-height: 52px;
       max-width: 250px;
+      position: relative;
+
+      .fa-bluescreen::before {
+         content: url(../img/bluescreen.svg);
+         position: absolute;
+         transform: translate(-50%, -50%);
+         top: 50%;
+         left: 30%;
+         width: 20px;
+         height: 20px;
+      }
 
       i {
          margin-right: 10px;
@@ -212,6 +223,7 @@
       }
    }
 }
+
 
 // SECTION 
 .services {
