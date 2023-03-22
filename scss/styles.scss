@@ -25,10 +25,13 @@
    z-index: 12;
    border: 1px $color2 solid;
 
+   &__logo-link {
+      margin: auto 15px;
+   }
+
    &__logo-img {
-      margin-left: 15px;
-      height: 80px;
-      width: 192px;
+      height: 65px;
+      width: 156px;
    }
 
    &__button {
@@ -95,9 +98,11 @@
    .container {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      margin-top: 80px;
+      padding-top: 80px;
       align-items: center;
       width: 100%;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
    }
 
    &__inner:nth-child(1) {
@@ -128,7 +133,6 @@
       max-height: 52px;
       max-width: 250px;
 
-
       i {
          margin-right: 10px;
       }
@@ -148,7 +152,17 @@
          margin-left: 20px;
          content: '\25BA';
       }
+   }
 
+   &__title {
+      box-shadow: 0px 0px 5px 2px $shadow;
+      border-radius: 10px;
+      padding: 5px;
+      margin: 10px auto;
+      background-color: #fff;
+      max-height: 52px;
+      max-width: 250px;
+      text-align: center;
    }
 
    &__items:hover {
@@ -200,8 +214,11 @@
 }
 
 // SECTION 
+.services {
+   margin-bottom: 25px;
+}
+
 .services__title {
-   margin-top: 10px;
    margin-bottom: 0px;
    @extend %section-title;
    margin-bottom: 10px;

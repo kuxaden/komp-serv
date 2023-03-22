@@ -44,7 +44,7 @@
    }
 
    .menu-list.menu-list--active {
-      top: 80px;
+      top: 78px;
    }
 
    .navbar-btn {
@@ -125,7 +125,7 @@
 
 }
 
-@media (max-width: 660px) {
+@media (max-width: 680px) {
    .navbar {
       height: 60px;
 
@@ -140,8 +140,8 @@
       }
 
       &__logo-img {
-         height: 60px;
-         width: 144px;
+         height: 55px;
+         width: 132px;
       }
    }
 
@@ -167,7 +167,7 @@
       }
 
       .container {
-         margin-top: 60px;
+         padding-top: 60px;
          grid-template-columns: 1fr 1fr;
       }
    }
