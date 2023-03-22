@@ -90,37 +90,41 @@
 // HEADER_END
 
 .main-slide {
-   font-family: 'Caveat';
-   font-size: 20px;
-   line-height: 30px;
+
    background: radial-gradient(circle, $color1 0%, $color2 100%);
 
-   .container {
+   &__title {
+      @extend %section-title;
+      grid-area: 1 / 1 / 2 / 4;
+   }
+
+   &__inner {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       padding-top: 80px;
       align-items: center;
       width: 100%;
-      padding-bottom: 20px;
-      margin-bottom: 20px;
    }
 
-   &__inner:nth-child(1) {
-      grid-area: 1 / 1 / 2 / 2;
+   &__image1 {
+      grid-area: 2 / 1 / 3 / 2;
       z-index: 5;
    }
 
    &__problems {
-      grid-area: 1 / 1 / 2 / 4;
+      grid-area: 2 / 1 / 3 / 4;
       z-index: 6;
    }
 
-   &__inner:nth-last-child(1) {
-      grid-area: 1 / 3 / 2 / 4;
+   &__image2 {
+      grid-area: 2 / 3 / 3 / 4;
       z-index: 5;
    }
 
    &__items {
+      font-family: 'Caveat';
+      font-size: 20px;
+      line-height: 30px;
       box-shadow: 0px 0px 5px 2px $shadow;
       border-radius: 10px;
       padding: 5px;
@@ -163,17 +167,6 @@
          margin-left: 20px;
          content: '\25BA';
       }
-   }
-
-   &__title {
-      box-shadow: 0px 0px 5px 2px $shadow;
-      border-radius: 10px;
-      padding: 5px;
-      margin: 10px auto;
-      background-color: #fff;
-      max-height: 52px;
-      max-width: 250px;
-      text-align: center;
    }
 
    &__items:hover {
@@ -231,9 +224,7 @@
 }
 
 .services__title {
-   margin-bottom: 0px;
    @extend %section-title;
-   margin-bottom: 10px;
 }
 
 .services-block {
@@ -302,15 +293,13 @@
 // ABOUT
 .about {
    background: radial-gradient(circle, $color1 0%, $color2 100%);
+
+   &__inner {
+      padding-top: 1px;
+   }
 }
 
 .about__title {
-   padding-top: 10px;
-   margin-top: 10px;
-}
-
-.about__title h2 {
-   margin: 10px auto;
    @extend %section-title;
 }
 
@@ -428,7 +417,6 @@
 
    &__title {
       @extend %section-title;
-      margin: 25px auto 10px;
    }
 
    &__address {
