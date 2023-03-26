@@ -33,7 +33,7 @@ const paths = {
 }
 // Очистка каталога dist;
 function clean(){
-    return del(['css/*','js/*', '!img', '!css/baguetteBox.min.css', '!js/baguetteBox.min.js'])
+    return del(['css/*','js/*', '!img', '!css/font-awesome.min.css'])
 }
 // Сжатие HTML
 function html() {
